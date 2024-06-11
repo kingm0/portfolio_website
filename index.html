@@ -16,11 +16,15 @@
   </head>
   <body>
     <header class="header">
-      <img src="./assets/logo/logo.png" alt="" class="logo" />
+      <div>
+
+        <img src="./assets/logo/logoofweb-removebg-preview.png" alt="" class="logo" />
+        </div>
       <ul class="main-nav-list">
         <li><a href="#" class="main-nav-link">Home</a></li>
         <li><a href="#" class="main-nav-link">Work</a></li>
         <li><a href="#" class="main-nav-link">Contact</a></li>
+        <li><a href="#" class="main-nav-link">Resume</a></li>
       </ul>
     </header>
     <section class="hero">
@@ -47,34 +51,37 @@
     <section class="about-me">
       <div class="about-me-discription">
         <p class="introduction">Introduction !</p>
-        <h1 class="about-me-title">Hello World !</h1>
+        <h1 class="about-me-title">Meet Mukul Singhal: Innovator in Information Technology</h1>
         <p class="about-me-subheading">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et sunt
-          facilis illo labore quia quam iusto sed odio neque ipsam quaerat nobis
-          repudiandae, aspernatur vel in minus perferendis ab! Aliquid nulla
-          natus eveniet, doloribus et est aperiam perferendis ullam qui quasi
-          corporis a, similique repellendus reprehenderit? Deserunt consequuntur
-          odit fugit possimus eum accusantium, cum quam dignissimos voluptas
-          quos aliquam! Mollitia eum, tempore fuga iure amet pariatur nulla
-          recusandae explicabo modi laborum veniam repudiandae et dolorum cumque
-          illum temporibus nemo voluptate aliquid nam beatae sit aut incidunt
-          tempora! Dolores, cupiditate!
+          "I am a dedicated Information Technology student at the Indian Institute of Information Technology, Allahabad. My academic journey has nurtured a fervent enthusiasm for developing cutting-edge solutions that merge seamlessly with everyday life. Proficient in HTML, CSS, JavaScript, and React, I strive to innovate and push the boundaries of technology. Beyond technical proficiency, I am driven by a commitment to delivering captivating digital experiences. My aim is to harmonize creativity and technology to create impactful solutions that resonate with users. With an unwavering dedication to continuous improvement, I eagerly embrace new challenges, always seeking opportunities to learn and grow."
+      </p>
         </p>
       </div>
+      <model-viewer
+       id="viewer1" style="margin-top: -40vh; display: flex; margin-left: 50vw; width: 40%;"
+        src="./models/impossible_cube/scene.gltf"
+        camera-controls
+        disable-pan
+        disable-zoom
+        interaction-prompt="none"
+        min-camera-orbit="auto 0deg auto"
+        max-camera-orbit="auto 360deg auto"
+        field-of-view="15.3deg"
+      ></model-viewer>
       <div class="cards">
         <div class="card animation">
-          <img src="./assets/skills/react.png" alt="" class="reactimg" />
-          <p class="title">React Js</p>
+          <img src="./assets/skills/MVM1-1-removebg-preview.png" alt="" class="reactimg" />
+          <p class="title">Mern Stack</p>
         </div>
 
         <div class="card animation">
-          <img src="./assets/skills/R3F.png" alt="" class="r3f" />
-          <p class="title">React 3 Fibre</p>
+          <img src="./assets/skills/php-removebg-preview.png" alt="" class="r3f" />
+          <p class="title">PHP</p>
         </div>
 
         <div class="card animation">
-          <img src="./assets/skills/ThreeJs.png" alt="" class="threejs" />
-          <p class="title">Three Js</p>
+          <img src="./assets/skills/sql-removebg-preview.png" alt="" class="threejs" />
+          <p class="title">SQL</p>
         </div>
 
         <div class="card animation">
@@ -84,7 +91,7 @@
 
         <div class="card animation">
           <img src="./assets/skills/htmlcss.png" alt="" class="html" />
-          <p class="title">Html && css</p>
+          <p class="title">Html & css</p>
         </div>
       </div>
     </section>
@@ -243,7 +250,7 @@
       </div>
       </div>
     </div>
-    <model-viewer id="viewer" class="robo" src="./models/robot_playground/scene.gltf"
+    <model-viewer id="viewer2" class="robo" src="./models/robot_playground/scene.gltf"
     camera-controls disable-pan disable-zoom interaction-promt="none" field-of-view="22deg"
     autoplay="experiment_Objext_159"></model-viewer>
     </section>

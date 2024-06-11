@@ -188,3 +188,29 @@ function qs(selector, all = false) {
     }
 });
 
+document.addEventListener('mousemove', (event) => {
+  const modelViewer = document.querySelector('#viewer1');
+  const { clientX, clientY } = event;
+  const { innerWidth, innerHeight } = window;
+  
+  const xPercentage = clientX / innerWidth;
+  const yPercentage = clientY / innerHeight;
+  
+  const xOrbit = (xPercentage * 360 - 180).toFixed(2);
+  const yOrbit = (yPercentage * 360 - 180).toFixed(2);
+  
+  modelViewer.cameraOrbit = `${xOrbit}deg ${yOrbit}deg auto`;
+});
+document.addEventListener('mousemove', (event) => {
+  const modelViewer = document.querySelector('#viewer2');
+  const { clientX, clientY } = event;
+  const { innerWidth, innerHeight } = window;
+  
+  const xPercentage = clientX / innerWidth;
+  const yPercentage = clientY / innerHeight;
+  
+  const xOrbit = (xPercentage * 360 - 180).toFixed(2);
+  const yOrbit = (yPercentage * 360 - 180).toFixed(2);
+  
+  modelViewer.cameraOrbit = `${xOrbit}deg ${yOrbit}deg auto`;
+});

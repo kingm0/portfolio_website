@@ -6,37 +6,93 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #010115;
+  background-color: #000000;
 }
+/* Import a modern Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .header {
   position: relative;
   display: flex;
-  place-items: center;
+  align-items: center; /* Updated for consistency */
   justify-content: space-between;
-  background-color: black;
+  margin-top: -6vh;
+  background-color: #000000;
   padding: 0 10vw;
+  z-index: 5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the header */
 }
+
 .logo {
-  max-width: 7vw;
-  z-index: 3;
+  width: 12vw;
+  z-index: 10;
+  display: flex;
+  margin-top: 2vh;
 }
+
 .main-nav-list {
+  /* margin-top: -20vh; */
   display: flex;
   list-style: none;
-  gap: 5vw;
+  gap: 3vw; /* Reduced gap for a tighter look */
   z-index: 3;
+  padding: 0; /* Ensure no padding is applied */
+  margin: 0; /* Ensure no margin is applied */
 }
+
 .main-nav-link {
   text-decoration: none;
   color: aliceblue;
-  font-size: 1.8vw;
-  transition: all 0.5s;
-  font-family: Dancing Script;
+  font-size: 1.5vw; /* Adjusted font size for better proportions */
+  font-family: 'Roboto', sans-serif; /* Updated font */
+  font-weight: 700; /* Bold for better readability */
+  position: relative; /* Needed for the underline effect */
+  padding: 0.5em 0; /* Added padding for better click area */
+  transition: color 0.3s ease; /* Smoother transition */
 }
+
+.main-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: palevioletred;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.main-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .main-nav-link:hover {
   color: palevioletred;
+  text-shadow: 0 0 5px rgba(255, 192, 203, 0.7); /* Adds a subtle text shadow effect */
 }
+
+/* Ensure better responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .main-nav-link {
+    font-size: 4vw; /* Increase font size for smaller screens */
+  }
+}
+
 .hero {
+  margin-top: -10vh;
   position: relative;
   display: grid;
   place-items: center;
@@ -68,26 +124,29 @@ body {
 }
 .hero-description {
   position: absolute;
-  width: 20vw;
+  width: 25vw;
   height: 10vh;
   margin-top: -60vh;
-  margin-left: -40vw;
+  margin-left: -60vw;
   z-index: 2;
 }
 .hero-title {
   color: #fff;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 400;
   font-family: EB Garamond;
+  place-items: center;
+  justify-content: center;
 }
 .mukul {
-  color: #7a31bf;
+  color: palevioletred;
   font-family: Dancing Script;
+  margin-left: 1vw;
 }
 .hero-subheading {
   color: #fff;
-  font-size: 1.5vw;
-  font-weight: 400;
+  font-size: 2vw;
+  font-weight: 700;
   font-family: "EB Garamond";
   margin-top: 2.6vw;
 }
@@ -95,7 +154,7 @@ body {
   position: absolute;
 }
 model-viewer {
-  width: 64vw;
+  width: 40vw;
   height: 95vh;
   z-index: 1;
 }
@@ -106,27 +165,28 @@ model-viewer {
   width: 100vw;
   height: 100vh;
   padding: 0 10vw;
+  /* margin-left: 2%; */
 }
 .about-me-discription {
-  width: 30vw;
+  width: 45vw;
   height: 35vh;
   position: absolute;
   margin-top: -50vh;
-  margin-left: -50vw;
+  margin-left: -35vw;
 }
 .introduction {
   color: #fff;
-  font-size: 1vw;
+  font-size: 4vw;
   padding-bottom: 2vh;
 }
 .about-me-title {
   color: #fff;
-  font-size: 3.5vw;
-  font-family: "Dancing Script";
+  font-size: 2vw;
+  font-family: "ROBOTO";
 }
 .about-me-subheading {
   color: #fff;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-weight: 400;
   font-family: "EB Garamond";
   line-height: 1.2;
@@ -153,7 +213,7 @@ model-viewer {
     --poster-color: transparent;
   }
 .cards {
-  margin-top: 35vh;
+  margin-top: 15vh;
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -172,15 +232,21 @@ model-viewer {
   box-shadow: 0 0 9px #fff;
 }
 .reactimg {
-  width: 70%;
+  width: 90%;
   z-index: 1;
 }
 .r3f,
 .threejs,
 .html {
-  width: 150%;
+  width: 100%;
   z-index: 1;
   margin-top: -2vh;
+}
+.r3f{
+  width: 90%;
+}
+.html{
+  width: 180%;
 }
 .js {
   width: 60%;
