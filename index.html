@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="sytles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/logo/logo.png" alt="" class="logo" />
+      <ul class="main-nav-list">
+        <li><a href="#" class="main-nav-link">Home</a></li>
+        <li><a href="#" class="main-nav-link">Work</a></li>
+        <li><a href="#" class="main-nav-link">Contact</a></li>
+      </ul>
+    </header>
+    <section class="hero">
+      <img src="./assets/hero/webdev.png" alt="#" class="hero-img" />
+      <img src="./assets/hero/bg.jpg" alt="#" class="bg" />
+      <div class="hero-description">
+        <h1 class="hero-title">Hi, I'm <span class="mukul">Mukul </span> !</h1>
+        <p class="hero-subheading">Visual Web Developer</p>
+      </div>
+      <div class="hero-model">
+        <model-viewer
+        id="viewer"
+          src="./models/desk.glb"
+          camera-controls
+          disable-pan
+          disable-zoom
+          interaction-prompt="none"
+          min-camera-orbit="auto 0deg auto"
+          max-camera-orbit="auto 180deg auto"
+          field-of-view="32.3deg"
+        ></model-viewer>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="about-me-discription">
+        <p class="introduction">Introduction !</p>
+        <h1 class="about-me-title">Hello World !</h1>
+        <p class="about-me-subheading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et sunt
+          facilis illo labore quia quam iusto sed odio neque ipsam quaerat nobis
+          repudiandae, aspernatur vel in minus perferendis ab! Aliquid nulla
+          natus eveniet, doloribus et est aperiam perferendis ullam qui quasi
+          corporis a, similique repellendus reprehenderit? Deserunt consequuntur
+          odit fugit possimus eum accusantium, cum quam dignissimos voluptas
+          quos aliquam! Mollitia eum, tempore fuga iure amet pariatur nulla
+          recusandae explicabo modi laborum veniam repudiandae et dolorum cumque
+          illum temporibus nemo voluptate aliquid nam beatae sit aut incidunt
+          tempora! Dolores, cupiditate!
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card animation">
+          <img src="./assets/skills/react.png" alt="" class="reactimg" />
+          <p class="title">React Js</p>
+        </div>
+
+        <div class="card animation">
+          <img src="./assets/skills/R3F.png" alt="" class="r3f" />
+          <p class="title">React 3 Fibre</p>
+        </div>
+
+        <div class="card animation">
+          <img src="./assets/skills/ThreeJs.png" alt="" class="threejs" />
+          <p class="title">Three Js</p>
+        </div>
+
+        <div class="card animation">
+          <img src="./assets/skills/js.png" alt="" class="js" />
+          <p class="title">javaScript</p>
+        </div>
+
+        <div class="card animation">
+          <img src="./assets/skills/htmlcss.png" alt="" class="html" />
+          <p class="title">Html && css</p>
+        </div>
+      </div>
+    </section>
+    <section class="time-line-section">
+      <div class="time-line-content">
+        <div class="heading-discription">
+          <p class="time-line-title">WHAT I HAVE DONE !</p>
+          <h1 class="time-line-subheading">Work Experience !</h1>
+        </div>
+        <div class="timeline">
+          <div class="line"></div>
+          <div class="time-line-discription">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Web Development</h2>
+              <p class="content-timeline-discription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam excepturi quidem ullam architecto. Nisi eius
+                aspernatur rem! Ipsam est voluptate vel veniam laboriosam?
+                Commodi, voluptate. Consectetur velit distinctio in ut. Impedit
+                odit explicabo unde quia dolore magni asperiores hic totam
+                recusandae, assumenda, cum, harum dolor.
+              </p>
+            </div>
+          </div>
+          <div class="time-line-discription">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Web Design</h2>
+              <p class="content-timeline-discription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam excepturi quidem ullam architecto. Nisi eius
+                aspernatur rem! Ipsam est voluptate vel veniam laboriosam?                
+              </p>
+            </div>
+          </div>
+          <div class="time-line-discription">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">Html & CSS</h2>
+              <p class="content-timeline-discription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam excepturi quidem ullam architecto. Nisi eius
+                aspernatur rem! Ipsam est voluptate vel veniam laboriosam?
+                Commodi, voluptate. Consectetur velit distinctio in ut. Impedit
+                odit explicabo unde quia dolore magni asperiores hic totam
+              </p>
+            </div>
+          </div>
+          <div class="time-line-discription">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">JavaScript</h2>
+              <p class="content-timeline-discription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam excepturi quidem ullam architecto. Nisi eius
+                aspernatur rem! Ipsam est voluptate vel veniam laboriosam?
+                Commodi, voluptate. Consectetur velit distinctio in ut. Impedit
+                odit explicabo unde quia dolore magni asperiores hic totam
+              </p>
+            </div>
+          </div>
+          <div class="time-line-discription">
+            <div class="mini-circle"></div>
+            <div class="content">
+              <h2 class="content-timeline-title">React 3 Fibre</h2>
+              <p class="content-timeline-discription">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam excepturi quidem ullam architecto. Nisi eius
+                aspernatur rem! Ipsam est voluptate vel veniam laboriosam?       
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="youtube">
+        <h1 class="youtube-title">
+            Youtube Videos !
+        </h1>
+        <p class="youtube-discription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos modi cupiditate, laboriosam commodi consequuntur aliquam nesciunt eum, iusto excepturi quasi totam dolorum voluptatem nam. Ea dolor dolorem beatae corporis eos!
+        </p>
+        <div class="videos">
+          <div class="youtube-videos">
+            <img src="./assets/links/groot-img.png" alt="#" class="images">
+            <h2 class="videos-title">Groot Website</h2>
+            <p class="videos-discription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
+            </p>
+            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
+          </div>
+          <div class="youtube-videos">
+            <img src="./assets/links/htmlport.png" alt="#" class="images">
+            <h2 class="videos-title">My Portfolio </h2>
+            <p class="videos-discription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
+            </p>
+            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
+          </div>
+          <div class="youtube-videos">
+            <img src="./assets/links/AnimatedBackground.png" alt="#" class="images">
+            <h2 class="videos-title">Three JS</h2>
+            <p class="videos-discription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
+            </p>
+            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
+          </div>
+          
+        </div>
+    </section>
+    <section class="final">
+      <div class="form-box"><h1 class="form-title">
+        Contact
+      </h1>
+      <div class="form-bg">
+      <form id="form">
+        <div class="form-content">
+          <div class="email-box">
+            <label for="email" class="email-title">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="E-mail destination, ex-https@google.com" class="email-input"/>
+          </div>
+          <div class="subject-box">
+            <label for="subject" class="subject-title">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject E-mail" class="subject-input"/>
+          </div>
+          <div class="message-box">
+            <label for="message" class="message-title">Message</label>
+            <input type="text" name="message" id="message" placeholder="E-mail Message" class="message-input"/>
+          </div>
+          <div id="buttons">
+            <button type="submit" class="send-button" disabled>Send</button>
+            <button class="reset-button" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+      <div id="spinner" class="hideSpinner messageSent">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+      <div id="spinner" class="hideSpinner messageSent">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <model-viewer id="viewer" class="robo" src="./models/robot_playground/scene.gltf"
+    camera-controls disable-pan disable-zoom interaction-promt="none" field-of-view="22deg"
+    autoplay="experiment_Objext_159"></model-viewer>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
