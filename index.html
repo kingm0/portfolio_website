@@ -1,225 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="sytles.css" />
-    <link rel="shortcut icon" href="assets/logo/logoofweb-removebg-preview.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nyTEkp6CXCXQVJ8njYB9zp3i0flJKtzx15QJdh8HBM4TwFnXjFe1bPd/1S8tcZ5QyRZg+Ex+kPVgS6k60bsRkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-        <div style="display: flex; margin-top: 10vh; margin-left: 50vw;">
 
-          <ul class="main-nav-list">
-            <li><a href="#" class="main-nav-link">Home</a></li>
-          <li><a href="#" class="main-nav-link">Work</a></li>
-        <li><a href="#" class="main-nav-link">Contact</a></li>
-      <li><a href="#" class="main-nav-link">Resume</a></li>
-    </ul>
-  </div>
-    </header>
-    <section class="hero">
-      <div style="display: flex; right: 30vw; z-index: 20; position: absolute; bottom: 70vh; width: 45vw; height: 45vh;">
-        <img src="./assets/logo/logoofweb-removebg-preview.png" alt="">
-      </div>
-      <img src="./assets/hero/webdev.png" alt="#" class="hero-img" />
-      <img src="./assets/hero/bg.jpg" alt="#" class="bg" />
-      <div class="hero-description">
-        <h1 class="hero-title">Hi, I'm <span class="mukul">Mukul </span> !</h1>
-           <p class="hero-subheading1">I'm a <span class="hero-subheading"></span> </p>
-      </div>
-      <div class="hero-model">
-        <model-viewer
-        id="viewer"
-          src="./models/desk.glb"
-          camera-controls
-          disable-pan
-          disable-zoom
-          interaction-prompt="none"
-          min-camera-orbit="auto 0deg auto"
-          max-camera-orbit="auto 180deg auto"
-          field-of-view="16.3deg"
-        
-        ></model-viewer>
-      </div>
-    </section>
-    <section class="about-me">
-      <div class="about-me-discription">
-        <p class="introduction">Meet Mukul Singhal !</p>
-        <h1 class="about-me-title">Innovator in Information Technology</h1>
-        <p class="about-me-subheading">
-          "I am a dedicated Information Technology student at the Indian Institute of Information Technology, Allahabad. My academic journey has nurtured a fervent enthusiasm for developing cutting-edge solutions that merge seamlessly with everyday life. Proficient in HTML, CSS, JavaScript, and React, I strive to innovate and push the boundaries of technology. Beyond technical proficiency, I am driven by a commitment to delivering captivating digital experiences. My aim is to harmonize creativity and technology to create impactful solutions that resonate with users. With an unwavering dedication to continuous improvement, I eagerly embrace new challenges, always seeking opportunities to learn and grow."
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="sytles.css" />
+  <link rel="shortcut icon" href="assets/logo/logoofweb-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-nyTEkp6CXCXQVJ8njYB9zp3i0flJKtzx15QJdh8HBM4TwFnXjFe1bPd/1S8tcZ5QyRZg+Ex+kPVgS6k60bsRkg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div style="display: flex; margin-top: 10vh; margin-left: 50vw;">
+
+      <ul class="main-nav-list">
+        <li><a href="#Home" class="main-nav-link">Home</a></li>
+        <li><a href="#Resume" class="main-nav-link">Resume</a></li>
+        <li><a href="#TimeLine" class="main-nav-link">TimeLine</a></li>
+        <li><a href="#Contact-Us" class="main-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero" id="Home">
+    <div style="display: flex; right: 30vw; z-index: 20; position: absolute; bottom: 70vh; width: 45vw; height: 45vh;">
+      <img src="./assets/logo/logoofweb-removebg-preview.png" alt="">
+    </div>
+    <img src="./assets/hero/webdev.png" alt="#" class="hero-img" />
+    <img src="./assets/hero/bg.jpg" alt="#" class="bg" />
+    <div class="hero-description">
+      <h1 class="hero-title">Hi, I'm <span class="mukul">Mukul </span> !</h1>
+      <p class="hero-subheading1">I'm a <span class="hero-subheading"></span> </p>
+    </div>
+    <div class="hero-model">
+      <model-viewer id="viewer" src="./models/desk.glb" camera-controls disable-pan disable-zoom
+        interaction-prompt="none" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 180deg auto"
+        field-of-view="16.3deg"></model-viewer>
+    </div>
+  </section>
+  <section class="about-me" id="Resume">
+    <div class="about-me-discription">
+      <p class="introduction">Meet Mukul Singhal !</p>
+      <h1 class="about-me-title">Innovator in Information Technology</h1>
+      <p class="about-me-subheading">
+        "I am a dedicated Information Technology student at the Indian Institute of Information Technology, Allahabad.
+        My academic journey has nurtured a fervent enthusiasm for developing cutting-edge solutions that merge
+        seamlessly with everyday life. Proficient in HTML, CSS, JavaScript, and React, I strive to innovate and push the
+        boundaries of technology. Beyond technical proficiency, I am driven by a commitment to delivering captivating
+        digital experiences. My aim is to harmonize creativity and technology to create impactful solutions that
+        resonate with users. With an unwavering dedication to continuous improvement, I eagerly embrace new challenges,
+        always seeking opportunities to learn and grow."
       </p>
-    <p style="color: aliceblue; font-size: 1.5vw; font-weight: 600; font-family: ROBOTO; margin-right: 20vw; padding-top: 7vh; display: inline-block;">
-      Know more About me:
+      <p
+        style="color: aliceblue; font-size: 1.5vw; font-weight: 600; font-family: ROBOTO; margin-right: 20vw; padding-top: 7vh; display: inline-block;">
+        Know more About me:
       </p>
-    <a href="link_to_your_resume.pdf" class="resume-download-button">Download Resume</a>
+      <a href="assets/f1/final_resume.pdf" download="Mukul's resume" class="resume-download-button">Download Resume</a>
       </p>
+    </div>
+    <model-viewer id="viewer1" style="margin-top: -45vh; display: flex; margin-left: 50vw; width: 30%;"
+      src="./models/impossible_cube/scene.gltf" camera-controls disable-pan disable-zoom interaction-prompt="none"
+      min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 360deg auto" field-of-view="12.3deg"></model-viewer>
+    <div class="cards">
+      <div class="card animation">
+        <img src="./assets/skills/MVM1-1-removebg-preview.png" alt="" class="reactimg" />
+        <p class="title">Mern Stack</p>
       </div>
-      <model-viewer
-       id="viewer1" style="margin-top: -45vh; display: flex; margin-left: 50vw; width: 30%;"
-        src="./models/impossible_cube/scene.gltf"
-        camera-controls
-        disable-pan
-        disable-zoom
-        interaction-prompt="none"
-        min-camera-orbit="auto 0deg auto"
-        max-camera-orbit="auto 360deg auto"
-        field-of-view="12.3deg"
-      ></model-viewer>
-      <div class="cards">
-        <div class="card animation">
-          <img src="./assets/skills/MVM1-1-removebg-preview.png" alt="" class="reactimg" />
-          <p class="title">Mern Stack</p>
-        </div>
 
-        <div class="card animation">
-          <img src="./assets/skills/php-removebg-preview.png" alt="" class="r3f" />
-          <p class="title">PHP</p>
-        </div>
-
-        <div class="card animation">
-          <img src="./assets/skills/sql-removebg-preview.png" alt="" class="threejs" />
-          <p class="title">SQL</p>
-        </div>
-
-        <div class="card animation">
-          <img src="./assets/skills/js.png" alt="" class="js" />
-          <p class="title">javaScript</p>
-        </div>
-
-        <div class="card animation">
-          <img src="./assets/skills/htmlcss.png" alt="" class="html" />
-          <p class="title">Html & css</p>
-        </div>
+      <div class="card animation">
+        <img src="./assets/skills/php-removebg-preview.png" alt="" class="r3f" />
+        <p class="title">PHP</p>
       </div>
-    </section>
-    <section class="time-line-section">
-      <!-- <img src="./assets/hero/bg.jpg" alt="#" class="bg" /> -->
-      <div class="time-line-content">
-        <div class="heading-discription">
-          <p class="time-line-title">My Work Portfolio !</p>
-          <h1 class="time-line-subheading">Career Highlights</h1>
+
+      <div class="card animation">
+        <img src="./assets/skills/sql-removebg-preview.png" alt="" class="threejs" />
+        <p class="title">SQL</p>
+      </div>
+
+      <div class="card animation">
+        <img src="./assets/skills/js.png" alt="" class="js" />
+        <p class="title">javaScript</p>
+      </div>
+
+      <div class="card animation">
+        <img src="./assets/skills/htmlcss.png" alt="" class="html" />
+        <p class="title">Html & css</p>
+      </div>
+    </div>
+  </section>
+  <section class="time-line-section" id="TimeLine">
+    <!-- <img src="./assets/hero/bg.jpg" alt="#" class="bg" /> -->
+    <div class="time-line-content">
+      <div class="heading-discription">
+        <p class="time-line-title">My Work Portfolio !</p>
+        <h1 class="time-line-subheading">Career Highlights</h1>
+      </div>
+      <div class="timeline">
+        <div class="line"></div>
+        <div class="time-line-discription">
+          <div class="mini-circle"></div>
+          <div class="content">
+            <h2 class="content-timeline-title">Html & CSS</h2>
+            <p class="content-timeline-discription">
+              Specialized in crafting clean and efficient code using HTML and CSS. Developed cross-browser compatible
+              websites and ensured compliance with web standards.
+            </p>
+            </p>
+          </div>
         </div>
-        <div class="timeline">
-          <div class="line"></div>
-          <div class="time-line-discription">
-            <div class="mini-circle"></div>
-            <div class="content">
-              <h2 class="content-timeline-title">Html & CSS</h2>
-              <p class="content-timeline-discription">
-                Specialized in crafting clean and efficient code using HTML and CSS. Developed cross-browser compatible websites and ensured compliance with web standards.
-              </p>
-              </p>
-            </div>
+        <div class="time-line-discription">
+          <div class="mini-circle"></div>
+          <div class="content">
+            <h2 class="content-timeline-title">JavaScript</h2>
+            <p class="content-timeline-discription">
+              Implemented interactive features and dynamic content using JavaScript. Focused on enhancing user
+              interaction and improving the overall functionality of web applications.
+            </p>
           </div>
-          <div class="time-line-discription">
-            <div class="mini-circle"></div>
-            <div class="content">
-              <h2 class="content-timeline-title">JavaScript</h2>
-              <p class="content-timeline-discription">
-                Implemented interactive features and dynamic content using JavaScript. Focused on enhancing user interaction and improving the overall functionality of web applications.
-              </p>
-            </div>
+        </div>
+        <div class="time-line-discription">
+          <div class="mini-circle"></div>
+          <div class="content">
+            <h2 class="content-timeline-title">SQL & Databases</h2>
+            <p class="content-timeline-discription">
+              Designed and optimized complex SQL queries for efficient data retrieval. Managed and maintained database
+              systems, ensuring data integrity and performance.
+            </p>
           </div>
-          <div class="time-line-discription">
-            <div class="mini-circle"></div>
-            <div class="content">
-              <h2 class="content-timeline-title">SQL & Databases</h2>
-              <p class="content-timeline-discription">
-                Designed and optimized complex SQL queries for efficient data retrieval. Managed and maintained database systems, ensuring data integrity and performance.
-              </p>
-            </div>
+        </div>
+        <div class="time-line-discription">
+          <div class="mini-circle"></div>
+          <div class="content">
+            <h2 class="content-timeline-title">Web Design</h2>
+            <p class="content-timeline-discription">
+              Specialized in crafting clean and efficient code using HTML and CSS. Developed cross-browser compatible
+              websites and ensured compliance with web standards.
+            </p>
           </div>
-          <div class="time-line-discription">
-            <div class="mini-circle"></div>
-            <div class="content">
-              <h2 class="content-timeline-title">Web Design</h2>
-              <p class="content-timeline-discription">
-                Specialized in crafting clean and efficient code using HTML and CSS. Developed cross-browser compatible websites and ensured compliance with web standards.           
-              </p>
-            </div>
-          </div>
-          <div class="time-line-discription">
-            <div class="mini-circle"></div>
-            <div class="content">
-              <h2 class="content-timeline-title">Web Development</h2>
-              <p class="content-timeline-discription">
-                Developed and maintained dynamic websites using HTML, CSS, JavaScript, and React. Worked on both front-end and back-end development, ensuring seamless user experiences and optimized performance.
-              </p>
-              </p>
-            </div>
+        </div>
+        <div class="time-line-discription">
+          <div class="mini-circle"></div>
+          <div class="content">
+            <h2 class="content-timeline-title">Web Development</h2>
+            <p class="content-timeline-discription">
+              Developed and maintained dynamic websites using HTML, CSS, JavaScript, and React. Worked on both front-end
+              and back-end development, ensuring seamless user experiences and optimized performance.
+            </p>
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="project">
-        <h1 class="my-project">
-            My Projects !
-        </h1>
-        <p class="projects-discription">
-          I have developed numerous web projects utilizing a variety of technology stacks and frameworks, including MERN (MongoDB, Express.js, React, Node.js), PHP, JavaScript, HTML, CSS, SQL databases, Prisma ORM, and Firebase. Some notable projects include:
+    </div>
+  </section>
+  <section class="project">
+    <h1 class="my-project">
+      My Projects !
+    </h1>
+    <p class="projects-discription">
+      I have developed numerous web projects utilizing a variety of technology stacks and frameworks, including MERN
+      (MongoDB, Express.js, React, Node.js), PHP, JavaScript, HTML, CSS, SQL databases, Prisma ORM, and Firebase. Some
+      notable projects include:
+    </p>
+    <div class="projects">
+      <div class="myprojects">
+        <img src="./assets/f1/Group_2-removebg-preview.png" alt="#" class="images">
+        <h2 class="project-title" style="font-size: 1.6vw;">WhatsVibe</h2>
+        <p class="pro-discription">
+        <div class="project-container">
+          <h2 class="project-title">WhatsApp Clone</h2>
+          <ul class="project-details">
+            <li><strong>Tech Stack:</strong> MERN stack (MongoDB, Express.js, React.js, Node.js), Prisma ORM, ZEGOCLOUD
+              SDK</li>
+            <li><strong>Description:</strong></li>
+            <ul style="font-size: 1vw;">
+              <li>Created a fully functional WhatsApp clone featuring real-time chat, status updates, end-to-end
+                encryption, and video calling using ZEGOCLOUD SDK.</li>
+              <li>Integrated real-time updates and notifications.</li>
+              <li>Utilized Google Firebase for authentication.</li>
+            </ul>
+          </ul>
+        </div>
         </p>
-        <div class="videos">
-          <div class="youtube-videos">
-            <img src="./assets/links/groot-img.png" alt="#" class="images">
-            <h2 class="videos-title">Groot Website</h2>
-            <p class="videos-discription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
-            </p>
-            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
-          </div>
-          <div class="youtube-videos">
-            <img src="./assets/links/htmlport.png" alt="#" class="images">
-            <h2 class="videos-title">My Portfolio </h2>
-            <p class="videos-discription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
-            </p>
-            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
-          </div>
-          <div class="youtube-videos">
-            <img src="./assets/links/AnimatedBackground.png" alt="#" class="images">
-            <h2 class="videos-title">Three JS</h2>
-            <p class="videos-discription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente commodi quas, ipsum assumenda harum maiores mollitia consequuntur nostrum placeat reiciendis accusamus ullam hic possimus est sequi distinctio eveniet modi.
-            </p>
-            <a href="htpps://www.youtube.com" target="_blank" class="btn">See Videos</a>
-          </div>
-          
+        <a href="https://github.com/kingm0/Whatsvibe-whatsapp-clone" target="_blank" class="btn">See Project</a>
+      </div>
+      <div class="myprojects">
+        <img src="./assets/f1/Group_1-removebg-preview.png" alt="#" class="images">
+        <h2 class="project-title" style="font-size: 1.6vw;">My Portfolio </h2>
+        <p class="pro-discription">
+        <div class="project-container">
+          <h2 class="project-title">Portfolio Website</h2>
+          <ul class="project-details">
+            <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript , React.js</li>
+            <li><strong>Description:</strong></li>
+            <ul style="font-size: 1vw;">
+              <li>Designed and built a responsive portfolio website showcasing my projects and skills.</li>
+              <li>Integrated animations and transitions using CSS and JavaScript.</li>
+              <li>Utilized React.js for component-based architecture and smooth navigation.</li>
+            </ul>
+          </ul>
         </div>
-    </section>
-    <section class="final">
-      <div class="form-box"><h1 class="form-title">
+        </p>
+        <a href="https://github.com/kingm0/portfolio_website" target="_blank" class="btn">See Project</a>
+      </div>
+      <div class="myprojects">
+        <img src="./assets/f1/laptop_realistic_2_1-removebg-preview.png" alt="#" class="images">
+        <h2 class="project-title" style="font-size: 1.6vw;">Tease_TrendZ</h2>
+        <p class="pro-discription">
+        <div class="project-container">
+          <h2 class="project-title">E-commerce Platform</h2>
+          <ul class="project-details">
+            <li><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, JavaScript</li>
+            <li><strong>Description:</strong></li>
+            <ul style="font-size: 1vw;">
+              <li>Developed a scalable e-commerce platform with user authentication, product listing, shopping cart
+                functionality, and order processing.</li>
+              <li>Implemented secure payment gateways and integrated third-party APIs for shipping and order tracking.
+              </li>
+            </ul>
+          </ul>
+        </div>
+        </p>
+        <a href="https://github.com/kingm0/Tease_Trendz-e-commerce" target="_blank" class="btn">See Project</a>
+      </div>
+
+    </div>
+  </section>
+  <section class="final" id="Contact-Us">
+    <div class="form-box">
+      <h1 class="form-title">
         Contact Us
       </h1>
       <div class="form-bg">
-        <form id="form" method="post"  action="" name="portfolio-contact">
+        <form id="form" method="post" action="" name="portfolio-contact">
           <div class="form-content">
             <div class="name-box">
               <label for="name" class="name-title">Name:</label>
-              <input type="text" name="name" id="name" placeholder="Mukul" class="name-input"/>
+              <input type="text" name="name" id="name" placeholder="Mukul" class="name-input" />
             </div>
             <div class="phone-box">
               <label for="phone" class="phone-title">Phone No:</label>
-              <input type="tel" name="phone" id="phone" placeholder="7533XXXXXX" class="phone-input"/>
+              <input type="tel" name="phone" id="phone" placeholder="7533XXXXXX" class="phone-input" />
             </div>
             <div class="email-box">
               <label for="email" class="email-title">E-mail:</label>
-              <input type="email" name="email" id="email" placeholder="E-mail destination, ex-https@google.com" class="email-input"/>
+              <input type="email" name="email" id="email" placeholder="E-mail destination, ex-https@google.com"
+                class="email-input" />
             </div>
             <div class="subject-box">
               <label for="subject" class="subject-title">Subject:</label>
-              <input type="text" name="subject" id="subject" placeholder="Subject E-mail" class="subject-input"/>
+              <input type="text" name="subject" id="subject" placeholder="Subject E-mail" class="subject-input" />
             </div>
             <div class="message-box">
               <label for="message" class="message-title">Message</label>
@@ -231,76 +264,76 @@
             </div>
           </div>
         </form>
-        
-      <div id="spinner" class="hideSpinner messageSent">
-        <div class="sk-chase">
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
+
+        <div id="spinner" class="hideSpinner messageSent">
+          <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
         </div>
-      </div>
-      <div id="spinner" class="hideSpinner messageSent">
-        <div class="sk-chase">
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
-          <div class="sk-chase-dot"></div>
+        <div id="spinner" class="hideSpinner messageSent">
+          <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
-    <model-viewer id="viewer2" class="robo" src="./models/robot_playground/scene.gltf"
-    camera-controls disable-pan disable-zoom interaction-promt="none" field-of-view="9deg"
-    autoplay="experiment_Objext_159"></model-viewer>
-    </section>
-    <footer class="footer">
-      <div class="footer-container">
-          <!-- Column 1: Coding Profiles -->
-          <div class="footer-column">
-              <h3 class="footer-heading">Coding Profiles</h3>
-              <a href="https://www.codechef.com/users/kingm01" class="footer-link">
-                  <i class="fa-solid fa-link"></i> CodeChef
-              </a>
-              <a href="https://codeforces.com/profile/kingm01" class="footer-link">
-                  <i class="fa-solid fa-link"></i> CodeForces
-              </a>
-              <a href="https://leetcode.com/kingm01" class="footer-link">
-                  <i class="fa-solid fa-link"></i> LeetCode
-              </a>
-              <a href="https://www.codingninjas.com/codestudio/profile/kingm01" class="footer-link">
-                  <i class="fa-solid fa-link"></i> CodeStudio
-              </a>
-          </div>
-          <!-- Column 2: Contact Information -->
-          <div class="footer-column2">
-              <h3 class="footer-heading">Contact</h3>
-              <a href="https://github.com/kingm0" class="footer-link">
-                  <i class="fab fa-github footer-icon"></i> GitHub
-              </a>
-              <a href="https://linkedin.com/in/mukulsinghal" class="footer-link">
-                  <i class="fab fa-linkedin footer-icon"></i> LinkedIn
-              </a>
-              <a href="tel:7533856904" class="footer-link">
-                  <i class="fas fa-phone-alt footer-icon"></i> 7533856904
-              </a>
-              <a href="mailto:singhalmukul920@gmail.com" class="footer-link">
-                  <i class="fas fa-envelope footer-icon"></i> singhalmukul920@gmail.com
-              </a>
-          </div>
+    <model-viewer id="viewer2" class="robo" src="./models/robot_playground/scene.gltf" camera-controls disable-pan
+      disable-zoom interaction-promt="none" field-of-view="9deg" autoplay="experiment_Objext_159"></model-viewer>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Coding Profiles -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Coding Profiles</h3>
+        <a href="https://www.codechef.com/users/kingm01" class="footer-link">
+          <i class="fa-solid fa-link"></i> CodeChef
+        </a>
+        <a href="https://codeforces.com/profile/kingm01" class="footer-link">
+          <i class="fa-solid fa-link"></i> CodeForces
+        </a>
+        <a href="https://leetcode.com/kingm01" class="footer-link">
+          <i class="fa-solid fa-link"></i> LeetCode
+        </a>
+        <a href="https://www.codingninjas.com/codestudio/profile/kingm01" class="footer-link">
+          <i class="fa-solid fa-link"></i> CodeStudio
+        </a>
       </div>
-      <div class="copyright">
-          <i class="fas fa-copyright footer-icon"></i>
-          <span>&nbsp;Copyright © Mukul Singhal</span>
+      <!-- Column 2: Contact Information -->
+      <div class="footer-column2">
+        <h3 class="footer-heading">Contact</h3>
+        <a href="https://github.com/kingm0" class="footer-link">
+          <i class="fab fa-github footer-icon"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/mukulsinghal" class="footer-link">
+          <i class="fab fa-linkedin footer-icon"></i> LinkedIn
+        </a>
+        <a href="tel:7533856904" class="footer-link">
+          <i class="fas fa-phone-alt footer-icon"></i> 7533856904
+        </a>
+        <a href="mailto:singhalmukul920@gmail.com" class="footer-link">
+          <i class="fas fa-envelope footer-icon"></i> singhalmukul920@gmail.com
+        </a>
       </div>
+    </div>
+    <div class="copyright">
+      <i class="fas fa-copyright footer-icon"></i>
+      <span>&nbsp;Copyright © Mukul Singhal</span>
+    </div>
   </footer>
-  
+
   <script src="https://kit.fontawesome.com/6b18803b8d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="index.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
