@@ -214,3 +214,34 @@ document.addEventListener('mousemove', (event) => {
   
   modelViewer.cameraOrbit = `${xOrbit}deg ${yOrbit}deg auto`;
 });
+
+var typed = new Typed(".hero-subheading",{
+  strings:["Web Developer","Programmer","UI/UX Designer"],
+  typeSpeed:110,
+  backSpeed:50,
+  backDelay:1500,
+  loop:true
+})
+const spturl = 'https://script.google.com/macros/s/AKfycbyju0k4bfx_KWFIP4tmsDEiZeqQkTiXlnhwJhguYkoPGcsMP22U0rgyiKClqEr8-njbzQ/exec';
+const form = document.forms['portfolio-contact'];
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(spturl, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.result === 'success') {
+      alert("Thank you, we will contact you soon!");
+      window.location.reload();
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  })
+  .catch(error => {
+    console.error('Error', error.message);
+    alert("There was an error. Please try again.");
+  });
+});
